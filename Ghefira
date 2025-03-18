@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ghefira!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="header">Selamat Ulang Tahun Ghefira Haula Nisa 🎉</h1>
+    <img src="https://assets.stickpng.com/images/5c7ddb73c9e61c00014c0c6a.png" alt="Snapchat Ghost" class="snapchat-ghost">
+    <button class="birthday-button" onclick="showBirthdayWish()">Click for Birthday Wishes! 🎂</button>
+
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+        <span class="modal-close" onclick="closeModal()">×</span>
+        <p id="wish-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
