@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ghefira Haula Nisa</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .wish-display {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Met ultah cwk ilkom aka Ghefira Haula Nisa</h1>
+        <button id="wishButton">HBD WYATB GBU</button>
+        <div id="wishDisplay" class="wish-display"></div>
+    </div>
+
+    <script>
+        const wishes = [
+            "Semoga IPKnya bagus asik",
+            "Semoga (gak) sama Gedruk",
+            "Semoga nggak telat lagi pas kelas ^^",
+            "Semoga hari kamu dipenuh kebahagiaan n berkah",
+            "Semoga kamu dikelilingi orang orang baik",
+            "Panjang umur yah Gep",
+            "Semoga tugas tugas mu selesai n lancar jaya",
+            "Semoga Ajisakany lancar jaya yh",
+            "Semoga semua yg kamu ingin bakal tecapai",
+            "Semoga cita2 km tercapai yah manis",
+            "Semoga teokom dan duskom km aman yah",
+            "Semoga tugas akhir cocur mu besok beres dgn lancar jaya",
+            "Aowkowkw cie tua",
+            "Semoga tahun ini n seterusnya km bahagia2 aj",
+            "Semoga semogi",
+            "Semoga kuliahny lancar sampe wisuda",
+            "Semoga kamu menemukan kebahagiaan di setiap hari",
+            "Semoga km dan org yg km sayangi selalu dalam lindungan Tuhan",
+            "Semoga kamu mendapatkan cinta dan kebahagiaan yang melimpah",
+            "Semoga selera km dl cowok membaik ya ^^",
+            "Semoga gak jadi sasaran Mbak Hermin"
+        ];
+
+        document.getElementById('wishButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * wishes.length);
+            const wish = wishes[randomIndex];
+            document.getElementById('wishDisplay').innerText = wish;
+        });
+    </script>
+</body>
+</html>
